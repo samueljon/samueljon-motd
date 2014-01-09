@@ -19,6 +19,8 @@ class motd {
     default => '0',
   }
 
+  $ascii = generate('/bin/sh', '-c', "/usr/bin/figlet -c -w 60 ${hostname}")
+
   file { '/etc/motd':
     ensure  => file,
     content => template("${module_name}/motd.erb"),

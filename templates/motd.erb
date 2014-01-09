@@ -1,18 +1,21 @@
--------------------------------------------------
-Welcome to the host named <%= hostname %>
-<%= operatingsystem %> <%= operatingsystemrelease %> <% if has_variable?("architecture") then %><%= architecture %><% end %>
--------------------------------------------------
-Puppet: <%= puppetversion %>
-Facter: <%= facterversion %>
-
-FQDN: <%= fqdn %>
-IP:   <%= ipaddress %>
-
+-----------------------------------------------------------
+<%= ascii %>
+-----------------------------------------------------------
+    Welcome to <%= hostname %>.<%= domain %>
+    OS: <%= operatingsystem %> Release <%= operatingsystemrelease %>
+    OS family: <%= osfamily %>
+    Architechture: <%=architecture %>
+    IP: <%=ipaddress %>
+<% if has_variable?("productname") then -%>
+    Product: <%=productname %>
+<% end -%>
 <% if has_variable?("processor0") then -%>
-Processor: <%= processor0 %>
+    CPU: <%=processorcount %> X <%=processor0 %>
 <% end -%>
-<% if has_variable?("memorysize") then -%>
-Memory:    <%= memorysize %>
+<% if has_variable?("memorytotal") then -%>
+    RAM: <%= memorytotal %>
 <% end -%>
-
--------------------------------------------------
+    System uptime: <%=uptime %>
+-----------------------------------------------------------
+    This system is managed by Puppet
+-----------------------------------------------------------

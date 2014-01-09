@@ -1,11 +1,11 @@
-name    'jeffmccune-motd'
-version '1.0.3'
+name    'samueljon-motd'
+version '1.0.4'
 source 'puppetlabs-motd'
-author 'Jeff McCune <jeff@puppetlabs.com>'
+author 'Samúel Jón Gunnarsson <sammi@villingaholt.nu>'
 license 'Apache'
 summary 'Manages the message of the day'
 description 'Places information about the host in the message of the day.'
-project_page 'https://github.com/jeffmccune/jeffmccune-motd'
+project_page 'https://github.com/samueljon/samueljon-motd'
 
 ## Add dependencies, if any:
 # dependency 'username/name', '>= 1.2.0'
