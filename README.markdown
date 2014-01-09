@@ -12,7 +12,7 @@ host that is managed by puppet along with some basic facts.
  * [@samueljon](http://twitter.com/samueljon)
 
 # Sample #
-
+```Shell
 -----------------------------------------------------------
                                   _ 
                         _ __  ___/ |
@@ -33,7 +33,7 @@ host that is managed by puppet along with some basic facts.
 -----------------------------------------------------------
     This system is managed by Puppet
 -----------------------------------------------------------
-
+```
 # Getting Started #
 
 In your puppet manifests, site.pp or in the Dashboard or other ENC:
