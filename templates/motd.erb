@@ -1,21 +1,21 @@
 -----------------------------------------------------------
 <%= ascii %>
 -----------------------------------------------------------
-    Welcome to <%= hostname %>.<%= domain %>
-    OS: <%= operatingsystem %> Release <%= operatingsystemrelease %>
-    OS family: <%= osfamily %>
-    Architechture: <%=architecture %>
-    IP: <%=ipaddress %>
+    Welcome to <%= @hostname %>.<%= @domain %>
+    OS: <%= @operatingsystem %> Release <%= @operatingsystemrelease %>
+    OS family: <%= @osfamily %>
+    Architechture: <%=@architecture %>
+    IP: <%=@ipaddress %>
 <% if has_variable?("productname") then -%>
-    Product: <%=productname %>
+    Product: <%=@productname %>
 <% end -%>
 <% if has_variable?("processor0") then -%>
-    CPU: <%=processorcount %> X <%=processor0 %>
+    CPU: <%=@processorcount %> X <%=@processor0 %>
 <% end -%>
 <% if has_variable?("memorytotal") then -%>
-    RAM: <%= memorytotal %>
+    RAM: <%= @memorytotal %>
 <% end -%>
-    System uptime: <%=uptime %>
+    System uptime: <%=@uptime %>
 -----------------------------------------------------------
     This system is managed by Puppet
 -----------------------------------------------------------
